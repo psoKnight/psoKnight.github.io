@@ -15,5 +15,12 @@
         <a href="javascript:;" id="boot2" style="display: none;" onclick="document.getElementById('boot-area').style.display='none';document.getElementById('boot1').style.display='block';document.getElementById('boot2').style.display='none';"><img src="/assets/boot.png" alt=""></a>
       </div>
   </div>
+  <div id="boot-area">
+      <ul>
+          {% for i in site.nav %}
+            <a href="{{ i[1] }}"><li>{{ i[0] }}</li></a>
+          {% endfor %}
+      </ul>
+  </div>
 
 </header>

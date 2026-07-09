@@ -186,7 +186,10 @@ a:hover{ color:var(--accent-2); }
 #boot1 img,#boot2 img{ height:26px; width:26px; margin:16px 20px; float:right; opacity:.85; }
 
 #boot-area{
+  position:absolute;
+  left:0; right:0; top:100%;
   width:100%;
+  background:rgba(12,13,16,0.6);
   border:none;
   border-bottom:1px solid var(--glass-brd);
   padding:10px;
@@ -840,9 +843,17 @@ main{ position:relative; z-index:1; }
   color:var(--muted-2); white-space:nowrap;
 }
 .hsh-line{ flex:1; height:1px; background:linear-gradient(90deg, var(--glass-brd), transparent); }
+.hsh-count{
+  font-size:12px; letter-spacing:2px; white-space:nowrap;
+  color:var(--muted-2); font-variant-numeric:tabular-nums;
+}
 
 @media (max-width:900px){
   .home-hero{ min-height:82vh; padding:24px 18px 30px; }
   .hero-figure{ width:250px; }
   .hero-spot{ width:520px; height:520px; }
+
+  .top-nav{ display:none; }
+  #top-boot{ display:block; position:relative; z-index:101; }
+  #boot-area{ position:fixed; top:74px; left:0; right:0; width:100%; z-index:99; }
 }

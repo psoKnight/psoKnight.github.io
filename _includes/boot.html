@@ -1,7 +1,1 @@
-<div id="boot-area">
-    <ul>
-        {% for i in site.nav %}
-          <a href="{{ i[1] }}"><li>{{ i[0] }}</li></a>
-        {% endfor %}
-    </ul>
-</div>
+{%- comment -%} #boot-area 已移入 header.html / post-header.html，使移动端下拉菜单锚定到 sticky 头部，避免与固定定位失步产生缝隙 {%- endcomment -%}
