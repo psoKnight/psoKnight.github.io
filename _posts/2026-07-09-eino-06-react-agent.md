@@ -2,7 +2,7 @@
 layout: post
 title: 'eino 逐能力核对(06)ReAct:一台会自己烧钱的循环,以及两个 react 的 API 陷阱'
 subtitle: '第二阶段·学习 —— 带循环的 Graph、迭代控制/工具直返/流式分支,把 Agent 当成本可治理的系统来设计'
-date: 2026-07-09 13:30:00 +0800
+date: 2026-07-09 08:05:00 +0800
 author: Gonzo Sun
 tags: [eino, Go, Agent, ReAct, ADK, 架构]
 ---

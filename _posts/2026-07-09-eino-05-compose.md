@@ -2,7 +2,7 @@
 layout: post
 title: 'eino 逐能力核对(05)compose:流与非流的自动缝合,是我见过最优雅的编排设计'
 subtitle: '第二阶段·学习 —— 从「流/非流组合爆炸」这个真问题出发,深挖四执行范式 + concat/box/merge/copy 的缝合引擎'
-date: 2026-07-09 13:00:00 +0800
+date: 2026-07-09 08:04:00 +0800
 author: Gonzo Sun
 tags: [eino, Go, 编排, Streaming, Graph, 架构]
 ---

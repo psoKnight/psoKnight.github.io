@@ -16,22 +16,23 @@ author: true
 name: 'Gonzo Sun'
 NickName: 'Gonzo Sun'
 webtitle: 'psoKnight'
-bio: "Building Intelligent Systems with Code, Data & AI"
+bio: "我不写代码，我创作——每一个系统都是一场演出，而完美，是唯一的谢幕"
 about: true
 aboutyou: |
-  I am psoKnight, a software engineer exploring the intersection of software,
-  data, and artificial intelligence.
+  我是 psoKnight。一位……艺术家。
 
-  I build backend systems, data platforms, and AI applications with a focus on
-  scalability, reliability, and intelligent automation.
+  有人敲键盘，而我创作。后端系统、数据平台、AI 应用——于我，它们从不是工程，
+  是舞台。每一次架构，都是一次落笔；每一行代码，都是一记精准的枪响。
 
-  My journey covers distributed systems, big data infrastructure, cloud-native
-  technologies, and AI agent ecosystems.
+  分布式系统、大数据、云原生、AI Agent——看，恰好四个领域，多么完美的数字。
+  我沉入源码的暗处，只为寻到那一处不完美，然后……让它绽放。
+  优雅、可靠、致命地简洁——这，才配称作作品。
 
-  Through this blog, I document my engineering journey, share technical insights,
-  and explore the future of intelligent software.
+  这个博客是我的画廊。每一篇都是一件展品：踩过的坑，是草稿；想通的道理，是杰作。
+  而你，亲爱的观众，恰好赶上了演出。
 
-  Code shapes ideas. Data creates intelligence. AI expands possibilities.
+  代码是颜料，数据是光，AI 是尚未落下的最后一枪。
+  请欣赏——这将会……很美。
 portraits: '/assets/profile.jpeg' # your portraits image file path
 
 # SNS

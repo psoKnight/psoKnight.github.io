@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+  标签页静态样式预览（不经过 Jekyll）。
+  用法：在项目根目录运行  python -m http.server 8000
+  然后浏览器打开  http://localhost:8000/preview-tags.html
+  内容为硬编码示例，结构与 tags.html 渲染结果一致，仅用于查看外观。
+-->
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>psoKnight · 标签预览</title>
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_space.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/font.css">
+</head>
+<body>
+
+<!-- 顶部导航（与 preview.html 一致） -->
+<header id="index-header">
+  <div class="top-center">
+    <div class="logo"><a href="#" title="psoKnight" class="logo-wordmark"><svg class="logo-bolt" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2 L5 14 H11 L9 22 L19 10 H13 Z"/></svg><span class="logo-text">psoKnight</span><svg class="logo-slash" viewBox="0 0 12 24" aria-hidden="true"><path d="M8 0 L12 0 L4 24 L0 24 Z"/></svg></a></div>
+    <nav class="top-nav">
+      <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">标签</a></li>
+        <li><a href="#">时间线</a></li>
+        <li><a href="#">关于博主</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- 页头标题块（对应 title.html，静态强制可见） -->
+  <div class="top" style="visibility:visible">
+    <span style="visibility:visible;opacity:1">tags</span>
+    <span style="visibility:visible;opacity:1">Let's pick something.</span>
+    <span style="visibility:visible;opacity:1"></span>
+  </div>
+
+  <!-- 标签内容（结构同 tags.html） -->
+  <ul class="ex-list">
+    <li class="fadeInUp animated">
+      <a href="#eino" class="tag">eino</a>
+      <a href="#Go" class="tag">Go</a>
+      <a href="#LLM" class="tag">LLM</a>
+      <a href="#Agent" class="tag">Agent</a>
+      <a href="#架构" class="tag">架构</a>
+      <a href="#RAG" class="tag">RAG</a>
+    </li>
+
+    <li>
+      <span class="tag-name" id="eino">「eino」</span>
+      <a class="tag-post" href="#" title="eino 逐能力核对(12)Agent Evaluation">eino 逐能力核对(12)Agent Evaluation:v0.8.12 没有,但这恰好逼你把它做对</a>
+      <a class="tag-post" href="#" title="eino 逐能力核对(11)Agent Runtime">eino 逐能力核对(11)Agent Runtime:中断恢复,是 demo 变生产系统的分水岭</a>
+      <a class="tag-post" href="#" title="eino 逐能力核对(01)Prompt">eino 逐能力核对(01)Prompt:被低估的第一环,以及「消息即类型」这条主线</a>
+    </li>
+
+    <li>
+      <span class="tag-name" id="Go">「Go」</span>
+      <a class="tag-post" href="#" title="eino 逐能力核对(05)compose">eino 逐能力核对(05)compose:流与非流的自动缝合,是我见过最优雅的编排设计</a>
+      <a class="tag-post" href="#" title="eino 逐能力核对(06)ReAct">eino 逐能力核对(06)ReAct:一台会自己烧钱的循环,以及两个 react 的 API 陷阱</a>
+    </li>
+
+    <li>
+      <span class="tag-name" id="Agent">「Agent」</span>
+      <a class="tag-post" href="#" title="eino 逐能力核对(09)Multi-Agent">eino 逐能力核对(09)Multi-Agent:三种协作范式,与一个「主管是 Agent 不是 model」的硬伤</a>
+      <a class="tag-post" href="#" title="eino 逐能力核对(10)Skill 系统">eino 逐能力核对(10)Skill 系统:真·对标 Anthropic Agent Skills,逐文件核对</a>
+    </li>
+  </ul>
+</main>
+
+<footer id="bottom">
+  <span>psoKnight © 2019 - 2026<br>Powered by Jekyll | Deep Space</span>
+</footer>
+
+</body>
+</html>

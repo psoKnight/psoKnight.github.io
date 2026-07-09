@@ -2,7 +2,7 @@
 layout: post
 title: 'eino 逐能力核对(04)Embedding:最廉价的组件,最昂贵的迁移'
 subtitle: '第一阶段·掌握 —— 一个方法的接口背后,是「换模型 = 全量重建索引」这个真实的运维工程'
-date: 2026-07-09 11:30:00 +0800
+date: 2026-07-09 08:03:00 +0800
 author: Gonzo Sun
 tags: [eino, Go, LLM, Embedding, RAG, 架构]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: 'eino 逐能力核对(09)Multi-Agent:三种协作范式,与一个「主管是 Agent 不是 model」的硬伤'
 subtitle: '第三阶段·企业级 —— Supervisor/Plan-Execute/Deep,把多智能体当成本翻倍的分布式系统来权衡'
-date: 2026-07-09 15:30:00 +0800
+date: 2026-07-09 08:08:00 +0800
 author: Gonzo Sun
 tags: [eino, Go, Multi-Agent, Supervisor, DeepAgent, 架构]
 ---

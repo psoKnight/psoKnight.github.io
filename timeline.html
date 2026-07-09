@@ -12,13 +12,18 @@ description:
     {% include title.html %}
     <ul class="ex-list">
         <li  class="fadeInUp animated" id="pc">
-          {% for post in site.posts %}
+          {% assign postsByDay = site.posts | group_by_exp: "p", "p.date | date: '%Y-%m-%d'" | sort: 'name' | reverse %}
+          {% for day in postsByDay %}
+          {% assign dayPosts = day.items | sort: 'date' | reverse %}
+          {% for post in dayPosts %}
             <div class="left-time">
+              {% if forloop.first %}
               <a href="javascript:;" onmouseover="this.children[0].style.borderLeft='8px solid rgba(255,255,255,0.55)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.14)';this.children[1].children[0].children[0].style.color='#ffffff';" onmouseout="this.children[0].style.borderLeft='8px solid rgba(255,255,255,0.10)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.05)';this.children[1].children[0].children[0].style.color='#d6d9df';">
                 <span class="righttime-san"></span><span class="righttime-main"><sapn class="timemain">
                     <time class="post-date timefont" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date: "%Y-%m-%d" }}</time>
                 </sapn></span>
               </a>
+              {% endif %}
             </div>
             <div class="right-name">
               <a href="{{ post.url }}" onmouseover="this.children[0].style.borderRight='8px solid rgba(255,255,255,0.55)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.14)';this.children[1].children[0].style.color='#ffffff';this.children[1].children[0].style.fontWeight='600';" onmouseout="this.children[0].style.borderRight='8px solid rgba(255,255,255,0.10)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.05)';this.children[1].children[0].style.color='#d6d9df';this.children[1].children[0].style.fontWeight='normal';">
@@ -31,16 +36,21 @@ description:
               </a>
             </div>
           {% endfor %}
+          {% endfor %}
         </li>
 
         <li  class="fadeInUp animated" id="media">
-          {% for post in site.posts %}
+          {% assign postsByDay = site.posts | group_by_exp: "p", "p.date | date: '%Y-%m-%d'" | sort: 'name' | reverse %}
+          {% for day in postsByDay %}
+          {% assign dayPosts = day.items | sort: 'date' | reverse %}
+          {% for post in dayPosts %}
             <div class="timeANDname">
               <a href="{{ post.url }}"><span class="timeANDname-san"></span><span class="timeANDname-main"><sapn class="timeANDnamemain">
                   {{ post.title }}
-                  <time class="timeline-data" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+                  {% if forloop.first %}<time class="timeline-data" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date: "%Y-%m-%d" }}</time>{% endif %}
               </sapn></span></a>
             </div>
+          {% endfor %}
           {% endfor %}
         </li>
     </ul>

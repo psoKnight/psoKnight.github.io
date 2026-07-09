@@ -2,7 +2,7 @@
 layout: post
 title: 'eino 逐能力核对(02)Function Calling:模型与真实世界之间那道不可信边界'
 subtitle: '第一阶段·掌握 —— 五个工具接口的分层取舍、InferTool 的反射内幕,以及把「模型输出当不可信输入」的生产纪律'
-date: 2026-07-09 10:30:00 +0800
+date: 2026-07-09 08:01:00 +0800
 author: Gonzo Sun
 tags: [eino, Go, Agent, Tool, Function Calling, 架构]
 ---

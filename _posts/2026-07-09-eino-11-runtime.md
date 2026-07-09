@@ -2,7 +2,7 @@
 layout: post
 title: 'eino 逐能力核对(11)Agent Runtime:中断恢复,是 demo 变生产系统的分水岭'
 subtitle: '第三阶段·企业级 —— Runner 调度 / AgentEvent 事件流 / checkpoint,以及 v0.8.12 里没有的「agentic runtime」品牌'
-date: 2026-07-09 16:30:00 +0800
+date: 2026-07-09 08:10:00 +0800
 author: Gonzo Sun
 tags: [eino, Go, Agent, Runtime, Runner, 架构]
 ---

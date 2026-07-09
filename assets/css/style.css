@@ -138,11 +138,7 @@ a:hover{ color:var(--accent-2); }
   filter:drop-shadow(0 0 5px rgba(150,180,255,.5));
 }
 .logo-slash{
-  width:9px;
-  height:23px;
-  transform:skewX(-14deg);
-  fill:#aeb4c0;
-  filter:drop-shadow(0 0 4px rgba(150,180,255,.4));
+  display:none;
 }
 .logo-text{
   font-family:'Haettenschweiler','Impact','Arial Narrow',var(--sans);
@@ -621,8 +617,8 @@ main{ position:relative; z-index:1; }
 /* ============================================================
    Timeline (glass)
    ============================================================ */
-.left-time{ display:inline-block; width:27%; margin-top:-4px; padding:20px 6px; }
-.right-name{ display:inline-block; width:63%; margin-top:-4px; padding:20px 10px; border-left:1px solid rgba(255,255,255,0.08); }
+.left-time{ display:inline-block; vertical-align:top; width:27%; margin-top:-4px; padding:20px 6px; }
+.right-name{ display:inline-block; vertical-align:top; width:63%; margin-top:-4px; padding:20px 10px; border-left:1px solid rgba(255,255,255,0.08); }
 .lefttime-san{
   display:block; float:left; width:0; height:0;
   border-top:8px solid transparent; border-right:8px solid rgba(255,255,255,0.10); border-bottom:8px solid transparent;
@@ -716,12 +712,13 @@ main{ position:relative; z-index:1; }
     rgba(255,255,255,0.09), transparent 70%);
   filter:blur(14px);
 }
-/* central hooded back-view silhouette */
+/* central hero character (inline SVG, atmospheric backdrop) */
 .hero-figure{
-  position:absolute; left:50%; bottom:0;
-  width:360px; height:auto;
+  position:absolute; left:50%; bottom:7%;
+  width:470px; height:auto;
   transform:translateX(-50%);
-  filter:drop-shadow(0 0 40px rgba(255,255,255,0.10));
+  filter:drop-shadow(0 0 46px rgba(154,133,255,0.18))
+         drop-shadow(0 0 18px rgba(98,170,255,0.12));
 }
 @keyframes heroBreath{
   0%{   opacity:.8; transform:translate(-50%,-50%) scale(1); }
@@ -747,9 +744,10 @@ main{ position:relative; z-index:1; }
   font-family:var(--sans);
   font-size:clamp(40px,7vw,88px);
   font-weight:700;
-  line-height:1.03;
+  line-height:1.16;
   letter-spacing:-2px;
   margin:0 auto;
+  padding:0 .16em .1em;
   /* 银白电流：加宽渐变，中间嵌一道亮白高光带，靠 background-position 游走 */
   background:linear-gradient(100deg,
     #8b909a 0%, #c6cbd4 26%, #ffffff 44%, #ffffff 50%,

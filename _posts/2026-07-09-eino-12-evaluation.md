@@ -2,7 +2,7 @@
 layout: post
 title: 'eino 逐能力核对(12)Agent Evaluation:v0.8.12 没有,但这恰好逼你把它做对'
 subtitle: '第三阶段·企业级 —— 全仓 eval 零命中,离线评测 + 过程评估(RunPath)+ 在线可观测的自建闭环(系列完)'
-date: 2026-07-09 17:00:00 +0800
+date: 2026-07-09 08:11:00 +0800
 author: Gonzo Sun
 tags: [eino, Go, Agent, Evaluation, 可观测, 架构]
 ---

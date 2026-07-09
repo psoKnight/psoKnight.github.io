@@ -1,0 +1,147 @@
+但是<!DOCTYPE html>
+<!--
+  时间线静态样式预览（不经过 Jekyll）。
+  用法：在项目根目录运行  python -m http.server 8000
+  然后浏览器打开  http://localhost:8000/preview-timeline.html
+  内容为硬编码示例，结构与 timeline.html 渲染结果一致：按天聚合，当天内按时间降序，
+  每天只在首篇显示日期。#pc 为桌面端列表，#media 为移动端列表。
+-->
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>psoKnight · 时间线预览</title>
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_space.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/font.css">
+</head>
+<body>
+
+<!-- 顶部导航（与 preview.html 一致） -->
+<header id="index-header">
+  <div class="top-center">
+    <div class="logo"><a href="#" title="psoKnight" class="logo-wordmark"><svg class="logo-bolt" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2 L5 14 H11 L9 22 L19 10 H13 Z"/></svg><span class="logo-text">psoKnight</span><svg class="logo-slash" viewBox="0 0 12 24" aria-hidden="true"><path d="M8 0 L12 0 L4 24 L0 24 Z"/></svg></a></div>
+    <nav class="top-nav">
+      <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">标签</a></li>
+        <li><a href="#">时间线</a></li>
+        <li><a href="#">关于博主</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- 页头标题块（对应 title.html，静态强制可见） -->
+  <div class="top" style="visibility:visible">
+    <span style="visibility:visible;opacity:1">timeLine</span>
+    <span style="visibility:visible;opacity:1">Sort by timeline.</span>
+    <span style="visibility:visible;opacity:1"></span>
+  </div>
+
+  <ul class="ex-list">
+    <!-- 桌面端：左日期 / 右标题（结构同 timeline.html #pc） -->
+    <li class="fadeInUp animated" id="pc">
+
+      <!-- 2026-07-09 分组，当天首篇显示日期 -->
+      <div class="left-time">
+        <a href="javascript:;" onmouseover="this.children[0].style.borderLeft='8px solid rgba(255,255,255,0.55)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.14)';this.children[1].children[0].children[0].style.color='#ffffff';" onmouseout="this.children[0].style.borderLeft='8px solid rgba(255,255,255,0.10)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.05)';this.children[1].children[0].children[0].style.color='#d6d9df';">
+          <span class="righttime-san"></span><span class="righttime-main"><sapn class="timemain">
+            <time class="post-date timefont" datetime="26-07-09">2026-07-09</time>
+          </sapn></span>
+        </a>
+      </div>
+      <div class="right-name">
+        <a href="#" onmouseover="this.children[0].style.borderRight='8px solid rgba(255,255,255,0.55)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.14)';this.children[1].children[0].style.color='#ffffff';this.children[1].children[0].style.fontWeight='600';" onmouseout="this.children[0].style.borderRight='8px solid rgba(255,255,255,0.10)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.05)';this.children[1].children[0].style.color='#d6d9df';this.children[1].children[0].style.fontWeight='normal';">
+          <span class="lefttime-san"></span>
+          <span class="lefttime-main"><sapn class="timemain">eino 逐能力核对(12)Agent Evaluation:v0.8.12 没有,但这恰好逼你把它做对</sapn></span>
+        </a>
+      </div>
+
+      <div class="left-time"></div>
+      <div class="right-name">
+        <a href="#" onmouseover="this.children[0].style.borderRight='8px solid rgba(255,255,255,0.55)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.14)';this.children[1].children[0].style.color='#ffffff';this.children[1].children[0].style.fontWeight='600';" onmouseout="this.children[0].style.borderRight='8px solid rgba(255,255,255,0.10)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.05)';this.children[1].children[0].style.color='#d6d9df';this.children[1].children[0].style.fontWeight='normal';">
+          <span class="lefttime-san"></span>
+          <span class="lefttime-main"><sapn class="timemain">eino 逐能力核对(06)ReAct:一台会自己烧钱的循环,以及两个 react 的 API 陷阱</sapn></span>
+        </a>
+      </div>
+
+      <div class="left-time"></div>
+      <div class="right-name">
+        <a href="#" onmouseover="this.children[0].style.borderRight='8px solid rgba(255,255,255,0.55)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.14)';this.children[1].children[0].style.color='#ffffff';this.children[1].children[0].style.fontWeight='600';" onmouseout="this.children[0].style.borderRight='8px solid rgba(255,255,255,0.10)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.05)';this.children[1].children[0].style.color='#d6d9df';this.children[1].children[0].style.fontWeight='normal';">
+          <span class="lefttime-san"></span>
+          <span class="lefttime-main"><sapn class="timemain">eino 逐能力核对(01)Prompt:被低估的第一环,以及「消息即类型」这条主线</sapn></span>
+        </a>
+      </div>
+
+      <!-- 2026-07-08 分组，当天首篇显示日期 -->
+      <div class="left-time">
+        <a href="javascript:;" onmouseover="this.children[0].style.borderLeft='8px solid rgba(255,255,255,0.55)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.14)';this.children[1].children[0].children[0].style.color='#ffffff';" onmouseout="this.children[0].style.borderLeft='8px solid rgba(255,255,255,0.10)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.05)';this.children[1].children[0].children[0].style.color='#d6d9df';">
+          <span class="righttime-san"></span><span class="righttime-main"><sapn class="timemain">
+            <time class="post-date timefont" datetime="26-07-08">2026-07-08</time>
+          </sapn></span>
+        </a>
+      </div>
+      <div class="right-name">
+        <a href="#" onmouseover="this.children[0].style.borderRight='8px solid rgba(255,255,255,0.55)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.14)';this.children[1].children[0].style.color='#ffffff';this.children[1].children[0].style.fontWeight='600';" onmouseout="this.children[0].style.borderRight='8px solid rgba(255,255,255,0.10)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.05)';this.children[1].children[0].style.color='#d6d9df';this.children[1].children[0].style.fontWeight='normal';">
+          <span class="lefttime-san"></span>
+          <span class="lefttime-main"><sapn class="timemain">eino 三层架构总览与设计取舍</sapn></span>
+        </a>
+      </div>
+
+      <div class="left-time"></div>
+      <div class="right-name">
+        <a href="#" onmouseover="this.children[0].style.borderRight='8px solid rgba(255,255,255,0.55)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.14)';this.children[1].children[0].style.color='#ffffff';this.children[1].children[0].style.fontWeight='600';" onmouseout="this.children[0].style.borderRight='8px solid rgba(255,255,255,0.10)'; this.children[1].style.backgroundColor='rgba(255,255,255,0.05)';this.children[1].children[0].style.color='#d6d9df';this.children[1].children[0].style.fontWeight='normal';">
+          <span class="lefttime-san"></span>
+          <span class="lefttime-main"><sapn class="timemain">eino compose 编排与流式处理</sapn></span>
+        </a>
+      </div>
+
+    </li>
+
+    <!-- 移动端：标题 + 每天首篇附日期（结构同 timeline.html #media） -->
+    <li class="fadeInUp animated" id="media">
+
+      <div class="timeANDname">
+        <a href="#"><span class="timeANDname-san"></span><span class="timeANDname-main"><sapn class="timeANDnamemain">
+          eino 逐能力核对(12)Agent Evaluation:v0.8.12 没有,但这恰好逼你把它做对
+          <time class="timeline-data" datetime="26-07-09">2026-07-09</time>
+        </sapn></span></a>
+      </div>
+      <div class="timeANDname">
+        <a href="#"><span class="timeANDname-san"></span><span class="timeANDname-main"><sapn class="timeANDnamemain">
+          eino 逐能力核对(06)ReAct:一台会自己烧钱的循环,以及两个 react 的 API 陷阱
+        </sapn></span></a>
+      </div>
+      <div class="timeANDname">
+        <a href="#"><span class="timeANDname-san"></span><span class="timeANDname-main"><sapn class="timeANDnamemain">
+          eino 逐能力核对(01)Prompt:被低估的第一环,以及「消息即类型」这条主线
+        </sapn></span></a>
+      </div>
+
+      <div class="timeANDname">
+        <a href="#"><span class="timeANDname-san"></span><span class="timeANDname-main"><sapn class="timeANDnamemain">
+          eino 三层架构总览与设计取舍
+          <time class="timeline-data" datetime="26-07-08">2026-07-08</time>
+        </sapn></span></a>
+      </div>
+      <div class="timeANDname">
+        <a href="#"><span class="timeANDname-san"></span><span class="timeANDname-main"><sapn class="timeANDnamemain">
+          eino compose 编排与流式处理
+        </sapn></span></a>
+      </div>
+
+    </li>
+  </ul>
+</main>
+
+<footer id="bottom">
+  <span>psoKnight © 2019 - 2026<br>Powered by Jekyll | Deep Space</span>
+</footer>
+
+</body>
+</html>
