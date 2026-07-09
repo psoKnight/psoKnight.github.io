@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+  静态样式预览页（不经过 Jekyll）。
+  用法：在项目根目录运行  python -m http.server 8000
+  然后浏览器打开  http://localhost:8000/preview.html
+  内容为硬编码示例，仅用于查看深空黑玻璃主题效果。
+-->
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>psoKnight · 样式预览</title>
+<link rel="stylesheet" href="/assets/css/animate.min.css">
+<link rel="stylesheet" href="/assets/css/pygments/pygments_space.css">
+<link rel="stylesheet" href="/assets/css/github-markdown.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/media.css">
+<link rel="stylesheet" href="/assets/css/font.css">
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<header id="index-header">
+  <div class="top-center">
+    <div class="logo"><a href="#" title="psoKnight" class="logo-wordmark"><svg class="logo-bolt" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2 L5 14 H11 L9 22 L19 10 H13 Z"/></svg><span class="logo-text">psoKnight</span><svg class="logo-slash" viewBox="0 0 12 24" aria-hidden="true"><path d="M8 0 L12 0 L4 24 L0 24 Z"/></svg></a></div>
+    <nav class="top-nav">
+      <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">标签</a></li>
+        <li><a href="#">时间线</a></li>
+        <li><a href="#">关于博主</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首页 Hero：连帽背影 + 聚光雾化 + 左信息栏 + 中央大标题 + 底部玻璃卡 -->
+  <div class="home-hero">
+    <div class="home-hero-fx" aria-hidden="true">
+      <div class="hero-fog"></div>
+      <div class="hero-spot"></div>
+      <div class="hero-floor"></div>
+      <svg class="hero-figure" viewBox="0 0 260 360" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="heroSil" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#15171c"/>
+            <stop offset="0.4" stop-color="#0a0b0e"/>
+            <stop offset="1" stop-color="#000000"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#heroSil)" d="M130,30 C162,30 188,58 188,98 C188,124 179,146 165,158 C210,170 240,210 245,262 C249,304 249,344 249,360 L11,360 C11,344 11,304 15,262 C20,210 50,170 95,158 C81,146 72,124 72,98 C72,58 98,30 130,30 Z"/>
+        <path fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" d="M130,40 C150,40 168,60 168,96"/>
+        <path fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1.5" d="M130,160 L130,352"/>
+      </svg>
+    </div>
+
+    <div class="hero-center">
+      <h1 class="hero-title">Royal War - the wild sheep Knight.</h1>
+      <p class="hero-sub">Exploring Big Data and Artificial Intelligence technologies.</p>
+    </div>
+    <a class="hero-scroll" href="#latest" aria-label="scroll down"><span></span></a>
+  </div>
+
+  <!-- 分区标题 + 文章卡片列表 -->
+  <div class="home-section-head" id="latest">
+    <span class="hsh-label">Latest Writings</span>
+    <span class="hsh-line"></span>
+  </div>
+  <ul class="post-list">
+    <li>
+      <section class="post-preview">
+        <h2 class="post-title">Hello, Deep Space Jekyll</h2>
+        <h3 class="post-subtitle">深空玻璃界面下的第一篇</h3>
+        <p class="post-excerpt">这是一段文章摘要示例，用于查看摘要在半透明玻璃卡片上的排版与配色。悬停卡片可以看到柔和高光与上浮动效。</p>
+      </section>
+      <footer class="post-tags">
+        <a href="#" class="post-tag">Jekyll</a>
+        <a href="#" class="post-tag">AI</a>
+        <a href="#" class="post-tag">CSS</a>
+        <time class="post-date">2026-07-08</time>
+      </footer>
+    </li>
+    <li>
+      <section class="post-preview">
+        <h2 class="post-title">Deep Space 玻璃卡片</h2>
+        <p class="post-excerpt">另一段示例摘要。背景是深黑渐变与微弱环境光，配合玻璃拟态卡片，营造沉浸式的未来实验室质感。</p>
+      </section>
+      <footer class="post-tags">
+        <a href="#" class="post-tag">Design</a>
+        <a href="#" class="post-tag">UI</a>
+        <time class="post-date">2026-07-01</time>
+      </footer>
+    </li>
+  </ul>
+
+  <!-- 分页 -->
+  <div class="pagination">
+    <div class="page-links">
+      <a class="page-link" href="#">&laquo;</a>
+      <a class="page-link" href="#">&raquo;</a>
+    </div>
+  </div>
+
+  <!-- 标签页示例 -->
+  <ul class="ex-list">
+    <li>
+      <a href="#" class="tag">Jekyll</a>
+      <a href="#" class="tag">AI</a>
+      <a href="#" class="tag">CSS</a>
+      <a href="#" class="tag">Design</a>
+      <a href="#" class="tag">MachineLearning</a>
+      <a href="#" class="tag">BigData</a>
+    </li>
+    <li>
+      <span class="tag-name">「MachineLearning」</span>
+      <a class="tag-post" href="#">Hello, Deep Space Jekyll</a>
+      <a class="tag-post" href="#">Deep Space 玻璃卡片</a>
+      <a class="tag-post" href="#">玻璃卡片与微光边框</a>
+    </li>
+  </ul>
+
+</main>
+
+<footer id="bottom">
+  <span>psoKnight © 2019 - 2026<br>Powered by Jekyll | Deep Space</span>
+</footer>
+
+</body>
+</html>

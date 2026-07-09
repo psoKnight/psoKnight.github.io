@@ -10,22 +10,33 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
   标签: '/tags.html'
   时间线: '/timeline.html'
   关于博主: '/about.html'
-  友情链接: '/friendLink.html'
 
 # 博主
 author: true
-name: 'SUNGZ'
-NickName: 'sungz'
+name: 'Gonzo Sun'
+NickName: 'Gonzo Sun'
 webtitle: 'psoKnight'
-bio: 'No bio'
+bio: "Building Intelligent Systems with Code, Data & AI"
 about: true
-aboutyou: 'No introduction'
+aboutyou: |
+  I am psoKnight, a software engineer exploring the intersection of software,
+  data, and artificial intelligence.
+
+  I build backend systems, data platforms, and AI applications with a focus on
+  scalability, reliability, and intelligent automation.
+
+  My journey covers distributed systems, big data infrastructure, cloud-native
+  technologies, and AI agent ecosystems.
+
+  Through this blog, I document my engineering journey, share technical insights,
+  and explore the future of intelligent software.
+
+  Code shapes ideas. Data creates intelligence. AI expands possibilities.
 portraits: '/assets/profile.jpeg' # your portraits image file path
 
 # SNS
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
-  mail: 'sgz15563452750@163.com'
   weixin: '/assets/wechat.png' # 你的微信二维码存放的地址
   qq: '/assets/qq.png' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
   github: 'https://github.com/psoKnight'
@@ -45,7 +56,7 @@ kramdown:
 # 代码高亮 使用rouge
 highlighter: rouge
 # 代码高亮主题使用pygments主题: autumn\ default\ emacs\ friendly\ manni\ murphy\ pastie\ perldoc\ tango 任选一个你喜欢的主题名称填在下面的单引号中
-pygmentsTheme: 'default'
+pygmentsTheme: 'space'
 
 # 友情链接
 friends:

@@ -1,0 +1,31 @@
+/* Deep Space grayscale syntax highlighting (rouge/pygments classes) */
+.highlight{ background:transparent; color:#d6d9df; }
+.highlight .hll{ background-color:rgba(255,255,255,0.10); }
+.highlight .c,.highlight .ch,.highlight .cm,.highlight .c1,.highlight .cs,.highlight .cd,.highlight .cpf{ color:#6b7079; font-style:italic; }
+.highlight .cp{ color:#9aa0ac; }
+.highlight .err{ color:#e6e8ec; }
+.highlight .k,.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr{ color:#ffffff; font-weight:bold; }
+.highlight .kt{ color:#c6cbd4; }
+.highlight .o,.highlight .ow{ color:#aeb3bc; }
+.highlight .p{ color:#8b909a; }
+.highlight .gd{ color:#9aa0ac; }
+.highlight .gi{ color:#e6e8ec; }
+.highlight .gh,.highlight .gu{ color:#ffffff; font-weight:bold; }
+.highlight .ge{ font-style:italic; }
+.highlight .gs{ font-weight:bold; }
+.highlight .gr,.highlight .gt{ color:#c6cbd4; }
+.highlight .s,.highlight .sa,.highlight .sb,.highlight .sc,.highlight .dl,.highlight .sd,.highlight .s2,.highlight .sh,.highlight .sx,.highlight .s1,.highlight .ss,.highlight .si,.highlight .se,.highlight .sr{ color:#b6bbc4; }
+.highlight .m,.highlight .mb,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .il,.highlight .mo,.highlight .mx{ color:#cfd3da; }
+.highlight .na{ color:#c6cbd4; }
+.highlight .nb,.highlight .bp{ color:#c6cbd4; }
+.highlight .nc{ color:#ffffff; font-weight:bold; }
+.highlight .no{ color:#cfd3da; }
+.highlight .nd{ color:#9aa0ac; }
+.highlight .ni{ color:#d6d9df; }
+.highlight .ne{ color:#e6e8ec; }
+.highlight .nf,.highlight .fm{ color:#eef0f3; }
+.highlight .nl{ color:#d6d9df; }
+.highlight .nn{ color:#d6d9df; }
+.highlight .nt{ color:#c6cbd4; }
+.highlight .nv,.highlight .vc,.highlight .vg,.highlight .vi,.highlight .vm{ color:#d6d9df; }
+.highlight .w{ color:#2a2d33; }

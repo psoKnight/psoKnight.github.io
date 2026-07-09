@@ -3,16 +3,60 @@ layout: default
 title: psoKnight
 page-title: Royal War - the wild sheep Knight.
 home-title: Royal War - the wild sheep Knight.
-description: No description
+description: Exploring Big Data and Artificial Intelligence technologies.
 ---
 
 {% include header.html %}
 {% include boot.html %}
 <main>
-    {% include title.html %}
+    <div class="home-hero">
+      <div class="home-hero-fx" aria-hidden="true">
+        <div class="hero-fog"></div>
+        <div class="hero-spot"></div>
+        <div class="hero-floor"></div>
+        <svg class="hero-figure" viewBox="0 0 260 360" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="heroSil" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#15171c"/>
+              <stop offset="0.4" stop-color="#0a0b0e"/>
+              <stop offset="1" stop-color="#000000"/>
+            </linearGradient>
+          </defs>
+          <path fill="url(#heroSil)" d="M130,30 C162,30 188,58 188,98 C188,124 179,146 165,158 C210,170 240,210 245,262 C249,304 249,344 249,360 L11,360 C11,344 11,304 15,262 C20,210 50,170 95,158 C81,146 72,124 72,98 C72,58 98,30 130,30 Z"/>
+          <path fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" d="M130,40 C150,40 168,60 168,96"/>
+          <path fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1.5" d="M130,160 L130,352"/>
+        </svg>
+      </div>
+
+      <div class="hero-center">
+        <svg class="hero-bolts" viewBox="0 0 600 240" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <path class="hero-bolt b1" d="M50,66 L120,42 L150,74 L214,44 L262,76 L332,46 L402,78 L472,48 L552,68"/>
+          <path class="hero-bolt b2" d="M96,190 L146,128 L134,158 L196,100 L206,138 L276,86 L300,120"/>
+          <path class="hero-bolt b3" d="M528,78 L474,120 L506,142 L444,184 L476,206"/>
+        </svg>
+        <h1 class="hero-title">{{ page.home-title }}</h1>
+        <p class="hero-sub">{{ page.description }}</p>
+      </div>
+      <a class="hero-scroll" href="#latest" aria-label="scroll down"><span></span></a>
+    </div>
+    <div class="home-section-head" id="latest">
+      <span class="hsh-label">Latest Writings</span>
+      <span class="hsh-line"></span>
+    </div>
     <ul class="post-list">
       {% include posts_paginator.html %}
     </ul>
 </main>
 {% include pageNav.html %}
+{% if site.tags.size > 0 %}
+<div class="home-section-head" id="all-tags">
+  <span class="hsh-label">All Tags</span>
+  <span class="hsh-line"></span>
+</div>
+<div class="home-tags">
+  {% for tag in site.tags %}
+  <a href="{{ site.baseurl }}/tags.html#{{ tag[0] }}" class="tag">{{ tag[0] }}<span class="tag-count">{{ tag[1].size }}</span></a>
+  {% endfor %}
+</div>
+{% endif %}
 {% include footer.html %}

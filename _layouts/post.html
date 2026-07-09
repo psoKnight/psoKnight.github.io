@@ -20,7 +20,7 @@
 
   {% if page.subtitle %}
     {% if page.color.size==0 or page.color==nil %}
-      <div class="postpage-subtitle" style="border-left: 8px solid #9A85FF; border-right: 8px solid #9A85FF;">
+      <div class="postpage-subtitle" style="border-left: 8px solid #15171c; border-right: 8px solid #15171c;">
         {{ page.subtitle }}
       </div>
     {% else %}
@@ -31,15 +31,11 @@
   {% endif %}
 
   <!-- 文章内容 -->
-  {{ page.content }}
-  <!-- 引入share模块 -->
-  {% include share.html %}
+  {{ content }}
 </div>
 
 <!-- 底部锚点 -->
 <a id="htmldown" name="htmldown"></a>
-<!-- 引入评论模块 -->
-{% include comment.html %}
 <!-- 引入goto模块 -->
 {% include goto.html %}
 <!-- 引入页面底部模块 -->
