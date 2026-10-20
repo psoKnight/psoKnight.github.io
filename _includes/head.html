@@ -8,6 +8,58 @@
 <link rel="stylesheet" href="/assets/css/github-markdown.css?v={{ site.github.build_revision }}">
 <link rel="stylesheet" href="/assets/css/style.css?v={{ site.github.build_revision }}">
 <link rel="stylesheet" href="/assets/css/media.css?v={{ site.github.build_revision }}">
+<style>
+html.pagination-restoring body { visibility:hidden; }
+</style>
+<script>
+// 分页加载时在首次绘制前恢复滚动位置。
+(function () {
+    var scrollKey = "psoKnight:paginationScrollY";
+    var savedState;
+
+    try {
+        var savedValue = sessionStorage.getItem(scrollKey);
+        if (savedValue === null) return;
+        savedState = JSON.parse(savedValue);
+    } catch (error) {
+        return;
+    }
+
+    var currentPath = window.location.pathname + window.location.search;
+    if (!savedState || savedState.path !== currentPath) {
+        try { sessionStorage.removeItem(scrollKey); } catch (error) {}
+        return;
+    }
+
+    var top = Number(savedState.top);
+    if (!Number.isFinite(top)) return;
+
+    try { sessionStorage.removeItem(scrollKey); } catch (error) {}
+
+    // 清除 #latest，避免浏览器在恢复脚本前执行锚点滚动。
+    if (window.location.hash === "#latest") {
+        try { history.replaceState(null, "", currentPath); } catch (error) {}
+    }
+
+    var root = document.documentElement;
+    root.classList.add("pagination-restoring");
+
+    function restoreBeforePaint() {
+        window.scrollTo(0, top);
+        requestAnimationFrame(function () {
+            window.scrollTo(0, top);
+            root.classList.remove("pagination-restoring");
+        });
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", restoreBeforePaint, { once: true });
+    } else {
+        restoreBeforePaint();
+    }
+})();
+</script>
+
 <!-- SNS-icon -->
 <script src="//at.alicdn.com/t/font_856428_y9z6nq7zf5.js"></script>
 <!-- share.css -->

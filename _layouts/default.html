@@ -21,6 +21,43 @@
     });
     wow.init();
 </script>
+<script>
+// 分页跳转时保留用户离开页面时的滚动位置。
+(function () {
+    var scrollKey = "psoKnight:paginationScrollY";
+
+    document.addEventListener("click", function (event) {
+        var target = event.target;
+        var link = target && target.closest ? target.closest(".pagination .page-link") : null;
+        if (!link || event.defaultPrevented || event.button > 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+            return;
+        }
+
+        var destination = new URL(link.href, window.location.href);
+        if (destination.pathname === window.location.pathname && destination.search === window.location.search) {
+            event.preventDefault();
+            return;
+        }
+
+        var positionSaved = false;
+        try {
+            sessionStorage.setItem(scrollKey, JSON.stringify({
+                top: window.pageYOffset || document.documentElement.scrollTop,
+                path: destination.pathname + destination.search
+            }));
+            positionSaved = true;
+        } catch (error) {
+            // sessionStorage 不可用时回退到链接上的 #latest 锚点。
+        }
+
+        if (positionSaved) {
+            event.preventDefault();
+            window.location.assign(destination.pathname + destination.search);
+        }
+    });
+})();
+</script>
+
 <!-- 页面刷新回到顶部 -->
 <script>
     window.onbeforeunload = function(){

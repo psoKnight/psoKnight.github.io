@@ -838,6 +838,9 @@ main{ position:relative; z-index:1; }
   padding:0 6px;
   display:flex; align-items:center; gap:18px;
 }
+
+#latest{ scroll-margin-top:90px; }
+
 .hsh-label{
   font-size:12px; letter-spacing:4px; text-transform:uppercase;
   color:var(--muted-2); white-space:nowrap;
