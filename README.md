@@ -41,7 +41,8 @@ tags: [标签一, 标签二]
 
 ## 技术栈
 
-Jekyll · kramdown(GFM)· Rouge 代码高亮(深空黑玻璃配色)· 来必力评论 · GitHub Pages 托管。
+Jekyll · 
+(GFM)· Rouge 代码高亮(深空黑玻璃配色)· 来必力评论 · GitHub Pages 托管。
 
 ## 致谢与许可
 
