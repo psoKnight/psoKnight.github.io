@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.9.0)
+    addressable (2.9.1)
       public_suffix (>= 2.0.2, < 8.0)
     base64 (0.3.0)
     bigdecimal (3.1.8)
@@ -74,7 +74,6 @@ GEM
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2026.5)
       tzinfo (>= 1.0.0)
-    wdm (0.2.0)
     webrick (1.9.2)
 
 PLATFORMS
@@ -91,7 +90,6 @@ DEPENDENCIES
   kramdown-parser-gfm (= 1.1.0)
   minima (= 2.5.1)
   tzinfo-data
-  wdm (~> 0.2.0)
 
 BUNDLED WITH
    2.6.9
